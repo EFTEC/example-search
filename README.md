@@ -1,6 +1,8 @@
 # example-search
 A basic example to create a search feature in php
 
+![](img/search.jpg)
+
 ## Configure Composer.
 
 For this step, you will need composer. Install composer and runs the next line (in the root folder of the project)
@@ -71,7 +73,7 @@ ____ 📁 views
 
 ## Connect to the database
 
-including vendor/autoload.php will deal with all the includes.
+including vendor/autoload.php will deal with all the (ahem) includes.   :-3
 
 ```php
 include "vendor/autoload.php";
@@ -88,7 +90,7 @@ $pdoOne=new PdoOne('mysql','127.0.0.1','root','abc.123','sakila');
 $pdoOne->connect();
 ```
 
-## Creating exampling data
+## Creating exampling data and the table (optional)
 
 If the table does not exist, then it will create.  
 It also will add example data.  
@@ -107,5 +109,46 @@ if (!$pdoOne->tableExist('test_products')) {
     $pdoOne->set(['idProduct','i',3,'name','s','Sprite'])
            ->insert('test_products');
 }
+```
+
+## Creating the view
+
+We will use BladeOne for view.
+
+It will use the folders views and compiles  (created in a previous step).
+
+### Creating the instance
+
+```php
+use eftec\bladeone\BladeOne;
+$blade=new BladeOne();
+```
+
+### using it
+
+The view is called "list", so we must create the next file (in the folder views/)
+
+views/list.blade.php  
 
 ```
+<body>
+....
+</body>
+```
+
+
+We will pass to the view the next data searchText and Result.   
+
+```php
+echo $blade->run('list'
+    ,[
+        'searchText'=>$searchText
+         ,'result'=>$result
+     ]);
+```
+
+## Joining all together
+
+See search.php file
+
+

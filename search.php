@@ -43,7 +43,7 @@ $blade=new BladeOne();
 
 
 
-echo $blade->run('view'
+echo $blade->run('list'
     ,[
         'searchText'=>$searchText
          ,'result'=>$result
