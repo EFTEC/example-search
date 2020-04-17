@@ -1,0 +1,15 @@
+{
+    "name": "jorge/example-search",
+    "type": "project",
+    "require": {
+        "eftec/bladeone": "^3.37",
+        "eftec/pdoone": "^1.33"
+    },
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Jorge Castro",
+            "email": "jorge.castro.c@gmail.com"
+        }
+    ]
+}
