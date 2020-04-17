@@ -30,21 +30,20 @@ if($button) {
     // we press the button
     $searchText=@$_POST['searchText'];
     $result=$pdoOne->select('*')->from('test_products')->where('name like ?',["%$searchText%"])->toList();
+    if($result===false) {
+        // result is false if the operation failed.
+        $result=[];
+    }
 } else {
     $searchText='';
     $result=$pdoOne->select('*')->from('test_products')->toList();
 }
 
-
-
-
 $blade=new BladeOne();
-
-
-
 
 echo $blade->run('list'
     ,[
         'searchText'=>$searchText
          ,'result'=>$result
+        ,'count'=>count($result)
      ]);
