@@ -145,7 +145,7 @@ echo $blade->run('list'
 
 See search.php file
 
-```
+```php
 <?php /** @noinspection PhpUnhandledExceptionInspection */
 
 use eftec\bladeone\BladeOne;
