@@ -1,6 +1,12 @@
 # example-search
 A basic example to create a search feature in php
 
+bootstrap version
+
+![](img/search-bootstrap.jpg)
+
+vanilla html
+
 ![](img/search.jpg)
 
 ## Configure Composer.
@@ -143,7 +149,7 @@ echo $blade->run('list'
 
 ## Joining all together
 
-See search.php file
+See search.php or search_bootstrap.php file
 
 ```php
 <?php /** @noinspection PhpUnhandledExceptionInspection */
