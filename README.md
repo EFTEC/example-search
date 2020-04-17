@@ -3,7 +3,7 @@ A basic example to create a search feature in php
 
 bootstrap version
 
-![](img/search-bootstrap.jpg)
+![](img/search_bootstrap.jpg)
 
 vanilla html
 
