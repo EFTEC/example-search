@@ -62,11 +62,11 @@ It will create a file called composer.json. It also will create a folder called 
 
 ## Create folder views and compiles (for the templates)
 
-📁 root project
-📁 composer.json (created in the previous step)
----- 📁 vendor (created in the previous step)
-____ 📁 compiles
-____ 📁 views
+📁 root project   
+📁 composer.json (created in the previous step)   
+---- 📁 vendor (created in the previous step)  
+____ 📁 compiles  
+____ 📁 views   
 
 
 ## Connect to the database
