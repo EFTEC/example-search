@@ -6,7 +6,7 @@ A basic example to create a search feature in php
 For this step, you will need composer. Install composer and runs the next line (in the root folder of the project)
 
 
-´´´
+```
 **composer init**
 
 
@@ -56,7 +56,7 @@ Would you like the vendor directory added to your .gitignore yes? **yes**
 Would you like to install dependencies now yes? **yes**
 Loading composer repositories with package information
 Updating dependencies (including require-dev)
-´´´
+```
 
 It will create a file called composer.json. It also will create a folder called vendor (with the libraries)
 
