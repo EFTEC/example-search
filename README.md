@@ -7,26 +7,20 @@ A basic example to create a search feature in php
 
 For this step, you will need composer. Install composer and runs the next line (in the root folder of the project)
 
+You chould change the values indicates with **  
+
+> composer init
+
 
 ```
-**composer init**
-
-
  Welcome to the Composer config generator
-
-
-
-This command will guide you through creating your composer.json config.
-
 Package name (<vendor>/<name>) : **jorge/example-search**
 Description []:
 Author <you name>, n to skip]:
 Minimum Stability []:
 Package Type (e.g. library, project, metapackage, composer-plugin) []: **project**
 License []: **MIT**
-
 Define your dependencies.
-
 Would you like to define your dependencies (require) interactively yes?
 Search for a package: **eftec/bladeone**
 Enter the version constraint to require (or leave blank to use the latest version):
